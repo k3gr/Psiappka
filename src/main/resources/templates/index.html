@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6b105a924a.js" crossorigin="anonymous"></script>
+
+    <title>PsiAppka</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <div class="notch">
+            <div class="speaker"></div>
+            <div class="camera"></div>
+        </div>
+        <div class="burger">
+            <div class="bones"><i class="fa-solid fa-bone"></i><i class="fa-solid fa-bone"></i><i
+                    class="fa-solid fa-bone"></i></div>
+            <div class="xmark"><i class="fa-solid fa-xmark"></i></div>
+        </div>
+        <a href="/" class="src">
+            <div class="logo"><img src="images/dog.png" alt="Dog icons created by Smashicons - Flaticon">
+                <h1>PsiAppka</h1></div>
+        </a>
+        <div class="welcome"><h1>Witaj w PsiAppce!</h1></div>
+        <div class="events">
+            <a href="/psie-memorki">
+                <div class="event"><img src="images/cards.svg" alt="">
+                    <p>Psie Memorki</p></div>
+            </a>
+            <a href="/generator-imion">
+                <div class="event"><img src="images/abc.svg" alt="">
+                    <p>Generator imion</p></div>
+            </a>
+            <a href="/psi-kalkulator">
+                <div class="event"><img src="images/calendar.svg" alt="">
+                    <p>Psi wiek</p></div>
+            </a>
+            <a href="/oblicz-karme">
+                <div class="event"><img src="images/dog-food.svg" alt="">
+                    <p>Oblicz ilość karmy</p></div>
+            </a>
+
+            <!--        <a href="/generator-imion"><div class="event"><img src="atlas.svg" alt=""><p>Psi atlas</p></div></a>-->
+            <!--        <a href="/generator-imion"><div class="event"><img src="dog-fun.svg" alt=""><p>Psie harce</p></div></a>-->
+        </div>
+        <nav>
+            <ul>
+                <li>Zapraszam poniżej:</li>
+                <li><a href="https://github.com/k3gr">github.com/k3gr</a></li>
+                <li><a href="https://graywolfracing.com">graywolfracing.com</a></li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<script>
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector("nav");
+    burger.addEventListener("click", function () {
+        burger.classList.toggle("active");
+        nav.classList.toggle("active");
+    })
+</script>
+</body>
+</html>

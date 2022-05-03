@@ -1,0 +1,50 @@
+<!doctype html >
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6b105a924a.js" crossorigin="anonymous"></script>
+    <title>PsiAppka</title>
+</head>
+<body>
+<div class="container">
+    <div class="notch">
+        <div class="speaker"></div>
+        <div class="camera"></div>
+    </div>
+    <div class="burger">
+        <div class="bones"><i class="fa-solid fa-bone"></i><i class="fa-solid fa-bone"></i><i
+                class="fa-solid fa-bone"></i></div>
+        <div class="xmark"><i class="fa-solid fa-xmark"></i></div>
+    </div>
+    <a href="/" class="src"><div class="logo"><img src="images/dog.png" alt="Dog icons created by Smashicons - Flaticon"><h1>PsiAppka</h1></div></a>
+    <div class="main">
+        <h1>Generator imion</h1>
+        <div class="text">
+            <p>Nie masz pomysłu na imię dla swojego pupila?</p>
+            <p>Pomożemy Ci je wybrać!</p>
+            </div>
+        <p class="big">Wybierz płeć:</p>
+        <div class="box">
+            <div class="panel" onclick="getMaleName()"><img src="images/male.svg" alt="male"><span>samiec</span></div>
+            <div class="panel" onclick="getFemaleName()"><img src="images/female.svg" alt="male"><span>samica</span></div>
+        </div>
+        <div class="result"><p id="result"></p></div>
+        <nav>
+            <ul>
+                <li>Zapraszam poniżej:</li>
+                <li><a href="https://github.com/k3gr">github.com/k3gr</a></li>
+                <li><a href="https://graywolfracing.com">graywolfracing.com</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="js/script.js"></script>
+</div>
+</body>
+</html>

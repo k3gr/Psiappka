@@ -1,0 +1,77 @@
+<!doctype html >
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6b105a924a.js" crossorigin="anonymous"></script>
+    <title>Psi wiek | PsiAppka</title>
+</head>
+<body>
+<div class="container">
+    <div class="notch">
+        <div class="speaker"></div>
+        <div class="camera"></div>
+    </div>
+    <div class="burger">
+        <div class="bones"><i class="fa-solid fa-bone"></i><i class="fa-solid fa-bone"></i><i
+                class="fa-solid fa-bone"></i></div>
+        <div class="xmark"><i class="fa-solid fa-xmark"></i></div>
+    </div>
+    <a href="/" class="src"><div class="logo"><img src="images/dog.png" alt="Dog icons created by Smashicons - Flaticon"><h1>PsiAppka</h1></div></a>
+    <div class="main">
+        <section>
+            <h1>Psi wiek</h1>
+            <div class="text"><p>Czy jesteś ciekawy ile miałby lat Twój pupil gdyby był człowiekiem?</p>
+                </div>
+            <p class="big">Ile lat ma Twój pies?</p>
+            <div class="select">
+                <select id="age" name="age">
+                    <option value="0">2 miesiące</option>
+                    <option value="1">4 miesiące</option>
+                    <option value="2">6 miesięcy</option>
+                    <option value="3">8 miesięcy</option>
+                    <option value="4">10 miesięcy</option>
+                    <option value="5">1 rok</option>
+                    <option value="6">2 lata</option>
+                    <option value="7">3 lata</option>
+                    <option value="8">4 lata</option>
+                    <option value="9">5 lat</option>
+                    <option value="10">6 lat</option>
+                    <option value="11">7 lat</option>
+                    <option value="12">8 lat</option>
+                    <option value="13">9 lat</option>
+                    <option value="14">10 lat</option>
+                    <option value="15">11 lat</option>
+                    <option value="16">12 lat</option>
+                    <option value="17">13 lat</option>
+                    <option value="18">14 lat</option>
+                    <option value="19">15 lat</option>
+                    <option value="20">16 lat</option>
+                </select>
+            </div>
+            <p class="big">Wybierz rozmiar psa:</p></section>
+        <div class="box">
+            <div id="small" class="panel" onclick="getSmallAge()"><img src="images/small.svg" alt="male"><span>mały</span></div>
+            <div id="medium" class="panel" onclick="getMediumAge()"><img src="images/medium.svg" alt="male"><span>średni</span></div>
+            <div id="big" class="panel" onclick="getBigAge()"><img src="images/big.svg" alt="male"><span>duży</span></div>
+        </div>
+        <p class="big">Twój pupil miałby:</p>
+        <div class="result"><p id="result"></p></div>
+        <nav>
+            <ul>
+                <li>Zapraszam poniżej:</li>
+                <li><a href="https://github.com/k3gr">github.com/k3gr</a></li>
+                <li><a href="https://graywolfracing.com">graywolfracing.com</a></li>
+            </ul>
+        </nav>
+    </div>
+    <script src="js/script.js"></script>
+</div>
+</body>
+</html>

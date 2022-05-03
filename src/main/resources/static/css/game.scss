@@ -1,0 +1,81 @@
+#seconds, #tens {
+  font-size: 2em;
+}
+
+button {
+  color: white;
+  border: solid 1px white;
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 1.2em;
+  padding: 18px 10px;
+  width: 180px;
+  margin: 10px;
+  outline: none;
+}
+
+button:hover {
+  transition: 4s ease-in-out;
+  background: white;
+  border: solid 1px white;
+}
+
+#game {
+  margin: 10px auto;
+}
+
+#game:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[data-view="card"] {
+  transform: rotateY(180deg);
+  width: 100px;
+  height: 100px;
+  border: solid 3px #004f28;
+  border-radius: 90px;
+  float: left;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.flipped {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  transform: rotateY(0deg);
+}
+
+.reverse {
+  transition: 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  transform: rotateY(180deg);
+}
+
+.correct {
+  opacity: .5;
+  cursor: default;
+  transform-style: preserve-3d;
+  position: relative;
+  transform: rotateY(0deg);
+}
+
+$cards: dog1, dog2, dog3, dog4, dog5, dog6;
+
+@each $card in $cards {
+
+  .correct[data-item="#{$card}"],
+  .flipped[data-item="#{$card}"] {
+    background: url("/cards/#{$card}.svg") left center no-repeat white;
+    background-size: contain;
+  }
+
+}
+
+
+
+
+
